@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">HomeWork6</string>
+    <string name="text_menu_item_one">item 1</string>
+    <string name="text_menu_item_two">item 2</string>
+    <string name="text_menu_item_three">item 3</string>
+    <string name="text_toolbar">Item one</string>
+    <string name="text_item_two">Item two</string>
+    <string name="text_item_three">Item three</string>
+</resources>

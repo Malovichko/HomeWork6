@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/rectangle_toolbar">
+        <shape>
+            <corners android:radius="2dp" />
+            <solid android:color="@color/tealish_two"/>
+            <size
+                android:width="32dp"
+                android:height="32dp"/>
+        </shape>
+    </item>
+</selector>
