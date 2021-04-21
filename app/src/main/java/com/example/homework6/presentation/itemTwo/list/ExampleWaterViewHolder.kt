@@ -6,7 +6,7 @@ import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.example.homework6.R
-import com.example.homework6.data.TwoItemWater
+import com.example.homework6.data.WaterMeter
 
 class ExampleWaterViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     private lateinit var textTitle: TextView
@@ -16,7 +16,7 @@ class ExampleWaterViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
     private lateinit var textBottomHint: TextView
     private lateinit var textNewReadings: TextView
 
-    fun bind(item: TwoItemWater) {
+    fun bind(item: WaterMeter) {
         textTitle = itemView.findViewById(R.id.two_item_water_title)
         textSubtitle = itemView.findViewById(R.id.water_item_scan_number)
         iconScanNumber = itemView.findViewById(R.id.water_item_scan_view)

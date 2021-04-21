@@ -6,8 +6,7 @@ import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.example.homework6.R
-import com.example.homework6.data.TwoItemPower
-import com.example.homework6.data.TwoItemWater
+import com.example.homework6.data.PowerMeter
 
 class ExamplePowerViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)  {
 
@@ -20,7 +19,7 @@ class ExamplePowerViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
     private lateinit var textNight: TextView
     private lateinit var textPeak:TextView
 
-    fun bind(item: TwoItemPower) {
+    fun bind(item: PowerMeter) {
         textTitlePowerItem = itemView.findViewById(R.id.two_item_power_title)
         textScanNumberPowerItem = itemView.findViewById(R.id.power_item_scan_number)
         iconScanPowerItem = itemView.findViewById(R.id.power_item_scan_view)

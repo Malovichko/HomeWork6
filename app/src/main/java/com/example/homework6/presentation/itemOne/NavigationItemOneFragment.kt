@@ -1,63 +1,56 @@
 package com.example.homework6.presentation.itemOne
 
 import android.os.Bundle
-import android.os.Message
-import android.view.Menu
-import android.view.MenuInflater
-import android.view.MenuItem
 import android.view.View
 import android.widget.ImageView
 import android.widget.Toast
-import android.widget.Toolbar
+import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.Fragment
 import com.example.homework6.R
 
 class NavigationItemOneFragment : Fragment(R.layout.fragment_menu_bar) {
 
     private lateinit var searchOnToolbar: ImageView
+    private lateinit var toolbar: Toolbar
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         initViews(view)
-        initListener()
+        initListeners()
     }
 
-    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        inflater.inflate(R.menu.menu_toolbar, menu)
-        super.onCreateOptionsMenu(menu, inflater)
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return when (item.itemId) {
-            R.id.menu_item_one -> {
-                setMessage("Нажали на первый элемент")
-                true
-            }
-            R.id.menu_item_two -> {
-                setMessage("Нажали на второй элемент")
-                true
-            }
-            R.id.menu_item_three -> {
-                setMessage("Нажали на третий элемент")
-                true
-            }
-            else -> super.onOptionsItemSelected(item)
-        }
-    }
-
-    private fun setMessage(message: String) {
-        val duration = Toast.LENGTH_LONG
+    private fun showToast(message: String) {
+        val duration = Toast.LENGTH_SHORT
         val toast = Toast.makeText(view!!.context, message, duration)
         toast.show()
     }
 
     private fun initViews(view: View) {
-        searchOnToolbar = view.findViewById(R.id.search_on_toolbar)
+        toolbar = view.findViewById(R.id.toolbar)
     }
 
-    private fun initListener() {
-        searchOnToolbar.setOnClickListener{
-            setMessage("Нажали на лупу")
+    private fun initListeners() {
+        toolbar.setOnMenuItemClickListener {
+            when (it.itemId) {
+                R.id.menu_item_one -> {
+                    showToast(getString(R.string.toast_menu_item_one))
+                    true
+                }
+                R.id.menu_item_two -> {
+                    showToast(getString(R.string.toast_menu_item_two))
+                    true
+                }
+                R.id.menu_item_three -> {
+                    showToast(getString(R.string.toast_menu_item_three))
+                    true
+                }
+                R.id.menu_item_search -> {
+                    showToast(getString(R.string.toast_menu_search))
+                    true
+                }
+                else -> super.onOptionsItemSelected(it)
+            }
         }
     }
 }

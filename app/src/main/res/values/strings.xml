@@ -3,7 +3,17 @@
     <string name="text_menu_item_one">item 1</string>
     <string name="text_menu_item_two">item 2</string>
     <string name="text_menu_item_three">item 3</string>
-    <string name="text_toolbar">Item one</string>
-    <string name="text_item_two">Item two</string>
-    <string name="text_item_three">Item three</string>
+
+    <string name="menu_item_one">Item one</string>
+    <string name="menu_item_two">Item two</string>
+    <string name="menu_item_three">Item three</string>
+    <string name="menu_item_search">Search</string>
+
+    <string name="toast_menu_item_one">Нажали на первый элемент</string>
+    <string name="toast_menu_item_two">Нажали на второй элемент</string>
+    <string name="toast_menu_item_three">Нажали на третий элемент</string>
+    <string name="toast_menu_search">Нажали на лупу</string>
+
+    <string name="show_banner_button_text">Показать баннер</string>
+    <string name="hide_banner_button_text">Скрыть баннер</string>
 </resources>

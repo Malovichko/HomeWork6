@@ -2,18 +2,18 @@ package com.example.homework6.data
 
 import androidx.annotation.DrawableRes
 
-sealed class TwoItemItem
+sealed class Meter
 
-data class TwoItemWater(
+data class WaterMeter(
     val title: String,
     val numberScan: Int,
     @DrawableRes val scanIcon: Int,
     @DrawableRes val icon: Int,
     val bottomHint: String,
     val textNewReadings: String
-) : TwoItemItem()
+) : Meter()
 
-data class TwoItemPower(
+data class PowerMeter(
     val title: String,
     val numberScan: Int,
     @DrawableRes val scanIcon: Int,
@@ -22,4 +22,4 @@ data class TwoItemPower(
     val textNight: String,
     val textPeak: String,
     val bottomHint: String
-) : TwoItemItem()
+) : Meter()
