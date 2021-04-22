@@ -3,17 +3,13 @@
     <style name="Theme.HomeWork6" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimary">@color/tealish</item>
         <item name="android:textColorPrimary">@color/charcoal_grey</item>
         <item name="colorPrimaryDark">@color/dark_54</item>
         <item name="android:windowBackground">@color/pale_grey_two</item>
     </style>
 
     <style name="BottomBarTheme" parent="Widget.MaterialComponents.BottomNavigationView.Colored">
-        <item name="itemTextColor">@color/tealish_two</item>
-        <item name="itemIconTint">@color/tealish</item>
-        <item name="android:background">@color/white</item>
-
     </style>
 
 

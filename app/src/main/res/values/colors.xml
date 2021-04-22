@@ -62,4 +62,5 @@
     <color name="pale_grey">#f3f5f6</color>
     <color name="almost_black">#03060a</color>
     <color name="pale_grey_three">#eeeef0</color>
+    <color name="transparent">#0000</color>
 </resources>
